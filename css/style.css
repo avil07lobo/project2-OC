@@ -89,7 +89,7 @@ main {
 }
 
 .wrapper .hotel {
-    height: 200px;
+    height: 250px;
 }
 
 .buttons {
@@ -109,4 +109,12 @@ main {
 .logo-nav {
     display: flex;
     justify-content: space-between;
+}
+
+.rating {
+    margin: 0;
+}
+
+.checked {
+    color: blue;
 }
