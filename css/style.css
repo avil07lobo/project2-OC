@@ -135,7 +135,28 @@ main {
 
 @media all and (max-width: 768px) {
     body {
-        display: inline-flex;
+        min-width: 700px;
+    }
+    .btn {
+        display: block;
+        margin: 30px auto;
+        width: 50%;
+    }
+    .hotel {
+        display: block;
+        margin: 30px auto;
+        width: 50%;
+    }
+    main {
+        display: block;
+        margin: 30px auto;
+        width 50%;
+    }
+    
+    .nav-list {
+        display: block;
+        margin: 0 auto;
+        width: 75%;
     }
     
 }
