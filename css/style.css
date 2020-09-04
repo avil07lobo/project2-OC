@@ -150,7 +150,13 @@ main {
     main {
         display: block;
         margin: 30px auto;
-        width 50%
+        width 50%;
+    }
+    
+    .nav-list {
+        display: block;
+        margin: 0 auto;
+        width: 75%;
     }
     
 }
