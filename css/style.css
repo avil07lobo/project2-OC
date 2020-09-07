@@ -1,10 +1,10 @@
-* {
-    margin: 0;
-    padding: 5px 5px 5px 5px;
-}
-
 html {
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway";
+    font-size: 1.6rem;
 }
 
 .wrapper {
@@ -19,6 +19,7 @@ html {
     width: 67%;
     margin-right: 50px;
     border-radius: 10px;
+    padding: 15px;
     
 }
 
@@ -27,6 +28,7 @@ html {
     width: 30%;
     margin-right: 50px;
     border-radius: 10px;
+    padding: 15px;
 }
 
 h1  {
@@ -37,11 +39,6 @@ h1  {
 
 html {
     font-size: 10px;
-}
-
-body {
-    font-family: Helvetica;
-    font-size: 1.6rem;
 }
 
 a {
@@ -60,8 +57,16 @@ ul {
 }
 
 img {
-    width: 200px;
+    width: 100px;
     height: 50px;
+}
+
+
+.popular .hotel img {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    
 }
 
 .hotel img {
@@ -79,17 +84,29 @@ main {
     display: flex;
 }
 
+
+
+
 .hotel {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     width: 30%;
-    margin: 1%;
+    margin: 10px auto;
+    padding: 10px;
     border-radius: 30px;
 
 }
 
 .popular .hotel {
     width: 90%;
+    margin: 10px auto;
 }
+
+.popular .wrapper2 .hotel .container {
+    display: flex;
+}
+
 
 .wrapper .hotel {
     height: 250px;
@@ -114,9 +131,11 @@ main {
     justify-content: space-between;
 }
 
-.rating {
+.fa fa-star {
     margin: 0;
+    width: 150px;
 }
+
 
 .checked {
     color: blue;
@@ -150,7 +169,7 @@ main {
     main {
         display: block;
         margin: 30px auto;
-        width 50%;
+        width: 50%;
     }
     
     .nav-list {
