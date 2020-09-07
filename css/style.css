@@ -107,6 +107,14 @@ main {
     display: flex;
 }
 
+.popular .wrapper2 .hotel .container .pop-img {
+    height: 100px;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+
+
 
 .wrapper .hotel {
     height: 250px;
@@ -147,8 +155,9 @@ main {
 
 .btn {
     border-radius: 7px;
+    background-color: white;
     width: 20%;
-    margin-left: 5px;
+    margin: 5px;
     padding: 0;
 }
 
