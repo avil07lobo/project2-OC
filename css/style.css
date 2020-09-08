@@ -64,8 +64,8 @@ img {
 
 .popular .hotel img {
     vertical-align: middle;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 200px;
     
 }
 
@@ -80,7 +80,7 @@ img {
     box-radius: 5px;
 }
 
-main {
+main .first-half {
     display: flex;
 }
 
@@ -98,9 +98,10 @@ main {
 
 }
 
-.popular .hotel {
+.popular .wrapper2 .hotel {
     width: 90%;
     margin: 10px auto;
+    height: 200px;
 }
 
 .popular .wrapper2 .hotel .container {
@@ -108,7 +109,7 @@ main {
 }
 
 .popular .wrapper2 .hotel .container .pop-img {
-    height: 100px;
+    height: 00px;
     margin-right: 10px;
     padding: 2px;
 }
@@ -188,3 +189,4 @@ main {
     }
     
 }
+
