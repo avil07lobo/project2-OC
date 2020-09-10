@@ -125,14 +125,13 @@ main .first-half {
 
 .buttons {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     width: 50%;
 
 }
 
 .filter {
     display: flex;
+    margin-top: 10px;
     
 
 }
@@ -154,13 +153,19 @@ main .first-half {
 
 .ikon {
     color: blue;
+    background-color: lightskyblue;
+    padding: 0 7px 0 7px;
+    float: left;
+    border-radius: 20px;
+    height: 25px;
 }
 
 .btn {
-    border-radius: 7px;
+    border-radius: 25px;
+    border-color: lightgray;
     background-color: white;
-    width: 20%;
-    margin: 5px;
+    width: 25%;
+    margin: 10px;
     padding: 0;
 }
 
@@ -228,4 +233,15 @@ main .first-half {
 
 .wrapper3 {
     display: flex;
+}
+
+.foot {
+    display: flex;
+    margin: 50px 0 0 0;
+    background-color: lightgray;
+}
+
+.misc {
+    width: 30%;
+    margin: 10px 100px 20px 20px;
 }
