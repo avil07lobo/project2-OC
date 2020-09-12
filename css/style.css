@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-family: "Raleway";
 }
 
 body {
@@ -77,8 +78,31 @@ img {
     padding: 0;
 }
 
-.search {
-    box-radius: 5px;
+.search_wrapper {
+    display: inline-block;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    
+  
+}
+
+.search_field {
+    border-style: none;
+    padding: 10px;
+    border-radius: 15px 0 0 15px;
+
+}
+
+.search-btn {
+    font-size: 15px;
+    border-style: none;
+    background-color: blue;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    padding: 11px;
+    margin: 0;
+
+    
 }
 
 main .first-half {
@@ -125,7 +149,9 @@ main .first-half {
 
 .buttons {
     display: flex;
-    width: 50%;
+    min-width: 100px;
+
+    
 
 }
 
@@ -154,19 +180,30 @@ main .first-half {
 .ikon {
     color: blue;
     background-color: lightskyblue;
-    padding: 0 7px 0 7px;
-    float: left;
-    border-radius: 20px;
-    height: 25px;
+    padding: 15px;
+    border-radius: 80%;
+    
+    
+    vertical-align: middle;
+
 }
 
 .btn {
+    display: flex;
+    font-size: 15px;
+    border: 1px gray solid;
     border-radius: 25px;
-    border-color: lightgray;
     background-color: white;
-    width: 25%;
-    margin: 10px;
+    width: 180px;
+    margin-left: 5px;
     padding: 0;
+    text-align: center;
+}
+
+.buttons .btn strong {
+    padding: 10px;
+    
+    vertical-align: middle;
 }
 
 @media all and (max-width: 768px) {
