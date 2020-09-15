@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box;
     font-family: "Raleway";
-    font-size: 10px;
 }
 
 body {
@@ -27,7 +26,7 @@ body {
 
 .popular {
     background-color: lightgray;
-    min-width: 600px;
+    width: 30%;
     margin-right: 50px;
     border-radius: 10px;
     padding: 15px;
@@ -39,6 +38,9 @@ h1  {
     max-width: 960px;
 }
 
+html {
+    font-size: 10px;
+}
 
 a {
     text-decoration: none;
@@ -114,7 +116,7 @@ main .first-half {
     display: flex;
     flex-direction: column;
     background-color: white;
-    min-width: 370px;
+    width: 30%;
     margin: 10px auto;
     padding: 5px;
     border-radius: 30px;
@@ -123,7 +125,7 @@ main .first-half {
 }
 
 .popular .wrapper2 .hotel {
-    width: 500px;
+    width: 90%;
     margin: 10px auto;
     height: 200px;
 }
@@ -149,7 +151,6 @@ main .first-half {
 .buttons {
     display: flex;
     min-width: 100px;
-    text-align: center;
 
     
 
@@ -206,11 +207,10 @@ main .first-half {
     vertical-align: middle;
 }
 
-
 .act {
-    width: 400px;
+    width: 300px;
     background-color: whitesmoke;
-    margin: 30px;
+    margin: 10px auto;
     padding: 0;
     border-radius: 30px;
     height: 200px;
@@ -234,12 +234,12 @@ main .first-half {
 
 .wrapper3 > .act:nth-child(2n + 1) {
     height: 430px;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 .wrapper3 > .act img:nth-child(2n + 1) {
     height: 380px;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 
