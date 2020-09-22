@@ -208,7 +208,7 @@ main .first-half {
 }
 
 .act {
-    width: 100%;
+    width: 75%;
     background-color: whitesmoke;
     margin: 10px auto;
     padding: 0;
@@ -235,12 +235,12 @@ main .first-half {
 
 .wrapper3 > .act:nth-child(2n + 1) {
     height: 430px;
-    width: 25%;
+    width: 75%;
 }
 
 .wrapper3 > .act img:nth-child(2n + 1) {
     height: 380px;
-    min-width: 300px;
+    width: 100%;
 }
 
 
@@ -287,11 +287,18 @@ main .first-half {
     
     .popular {
         background-color: white;
+        min-width: 75%;
+        margin: 0 auto;
     }
 
     .buttons {
         flex-wrap: wrap;
         margin: 10px;
+    }
+
+    .hotel {
+        min-width: 75%;
+        margin: 0 auto;
     }
 
 }
