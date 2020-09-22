@@ -27,6 +27,7 @@ body {
 .popular {
     background-color: lightgray;
     width: 30%;
+    min-width: 500px;
     margin-right: 30px;
     border-radius: 10px;
     padding: 15px;
@@ -117,6 +118,7 @@ main .first-half {
     flex-direction: column;
     background-color: white;
     width: 30%;
+    min-width: 310px;;
     margin: 10px auto;
     padding: 5px;
     border-radius: 30px;
@@ -125,8 +127,8 @@ main .first-half {
 }
 
 .popular .wrapper2 .hotel {
-    width: 90%;
-    margin: 10px auto;
+    width: 480px;
+    margin: 7px auto;
     height: 200px;
 }
 
@@ -207,8 +209,10 @@ main .first-half {
     vertical-align: middle;
 }
 
+
+
 .act {
-    width: 75%;
+    width: 280px;
     background-color: whitesmoke;
     margin: 10px auto;
     padding: 0;
@@ -235,7 +239,7 @@ main .first-half {
 
 .wrapper3 > .act:nth-child(2n + 1) {
     height: 430px;
-    width: 75%;
+    width: 280px;
 }
 
 .wrapper3 > .act img:nth-child(2n + 1) {
@@ -282,12 +286,16 @@ main .first-half {
 
     .accomodation {
         background-color: white;
+        width: 500px;
+        margin: 0 auto;
+        
+        
         
     }
     
     .popular {
         background-color: white;
-        min-width: 75%;
+        width: 500px;
         margin: 0 auto;
     }
 
@@ -297,8 +305,24 @@ main .first-half {
     }
 
     .hotel {
-        min-width: 75%;
-        margin: 0 auto;
+        width: 500px;
+        margin: 7px auto;
     }
 
+    .act {
+        width: 500px;
+        margin: 7px auto;
+    }
+
+    .act img {
+        width: 500px;
+    }
+
+    .wrapper3 > .act:nth-child(2n + 1) {
+        width: 500px;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: column;
 }
