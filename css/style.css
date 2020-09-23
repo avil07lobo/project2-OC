@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-family: "Raleway";
+    font-size: 10px;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
     width: 67%;
     margin-right: 30px;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     
 }
 
@@ -39,9 +40,16 @@ h1  {
     max-width: 960px;
 }
 
-html {
-    font-size: 10px;
+h3, p, .rating {
+    padding: 2px;
+    margin: 5px;
 }
+
+.acc-txt {
+    padding: 5px;
+    margin: 0;
+}
+
 
 a {
     text-decoration: none;
@@ -145,11 +153,6 @@ main .first-half {
 
 
 
-
-.wrapper .hotel {
-    height: 250px;
-}
-
 .buttons {
     display: flex;
     min-width: 100px;
@@ -212,9 +215,9 @@ main .first-half {
 
 
 .act {
-    width: 280px;
+    width: 320px;
     background-color: whitesmoke;
-    margin: 10px auto;
+    margin: 20px;
     padding: 0;
     border-radius: 30px;
     height: 200px;
@@ -239,7 +242,7 @@ main .first-half {
 
 .wrapper3 > .act:nth-child(2n + 1) {
     height: 430px;
-    width: 280px;
+    width: 320px;
 }
 
 .wrapper3 > .act img:nth-child(2n + 1) {
@@ -324,5 +327,6 @@ main .first-half {
 
     .foot {
         display: flex;
-        flex-direction: column;
+        flex-direction: column
+    }
 }
