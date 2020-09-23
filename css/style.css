@@ -58,12 +58,24 @@ a {
 ul {
     list-style: none;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: center;
+    margin: 10px auto;
 }
+
 
 .nav-item {
     margin: 10px;
+}
+
+
+
+.nav a {
+    padding: 20px 30px;
+}
+
+.nav a:hover {
+    border-top: 2px solid blue;
+    opacity: 1.0;
 }
 
 img {
