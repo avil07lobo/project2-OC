@@ -8,6 +8,8 @@ body {
     font-size: 1.6rem;
 }
 
+
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +132,7 @@ img {
     background-color: blue;
     color: white;
     border-radius: 0 15px 15px 0;
-    padding: 11px;
+    padding: 15px;
     margin: 0;
 
     
@@ -203,6 +205,23 @@ main .first-half {
 
 .checked {
     color: blue;
+}
+
+.mark {
+    background-color: lightgray;
+    padding: 16px;
+    border-radius: 15px 0 0 15px;
+}
+
+.infor {
+    font-size: small;
+    font-weight: lighter;
+    color: blue;
+    background-color: white;
+    padding: 7px;
+    margin-right: 5px;
+    border-radius: 80%;
+    border: 0.5px black solid;
 }
 
 .ikon {
