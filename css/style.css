@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-    font-family: "Raleway";
     font-size: 10px;
 }
 
@@ -18,9 +17,9 @@ body {
 
 .accomodation {
     background-color: lightgray;
-    width: 67%;
-    margin-right: 30px;
-    border-radius: 10px;
+    width: 62%;
+    margin: 10px auto;
+    border-radius: 30px;
     padding: 10px;
     
 }
@@ -29,8 +28,8 @@ body {
     background-color: lightgray;
     width: 30%;
     min-width: 500px;
-    margin-right: 30px;
-    border-radius: 10px;
+    margin: 10px auto;
+    border-radius: 30px;
     padding: 15px;
 }
 
@@ -43,6 +42,17 @@ h1  {
 h3, p, .rating {
     padding: 2px;
     margin: 5px;
+}
+
+h2 {
+    font-weight: 900;
+    margin: 30px 10px 5px 35px;
+}
+
+.show {
+    font-weight: 900;
+    margin: 20px 10px 15px 35px;
+    padding-bottom: 15px;
 }
 
 .acc-txt {
@@ -86,8 +96,8 @@ img {
 
 .popular .hotel img {
     vertical-align: middle;
-    width: 150px;
-    height: 200px;
+    width: 175px;
+    height: 150px;
     border-radius: 30px 0 0 30px;
     
 }
@@ -137,9 +147,9 @@ main .first-half {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 30%;
+    width: 25%;
     min-width: 310px;;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 5px;
     border-radius: 30px;
     box-shadow: 10px 5px 5px lightgray;
@@ -148,8 +158,8 @@ main .first-half {
 
 .popular .wrapper2 .hotel {
     width: 480px;
-    margin: 7px auto;
-    height: 200px;
+    margin: 30px auto;
+    height: 150px;
 }
 
 .popular .wrapper2 .hotel .container {
