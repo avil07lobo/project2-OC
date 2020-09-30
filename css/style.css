@@ -1,13 +1,15 @@
 html {
     box-sizing: border-box;
     font-size: 10px;
+    
 }
 
 body {
     font-family: "Raleway";
     font-size: 1.6rem;
     width: 1550px;
-    margin: auto;
+    margin: 0 auto;
+    border: 1px solid black;
 }
 
 
@@ -21,7 +23,7 @@ body {
 }
 
 .accomodation {
-    background-color: lightgray;
+    background-color: #F2F2F2;
     width: 63%;
     margin: 10px auto;
     border-radius: 30px;
@@ -30,11 +32,15 @@ body {
 }
 
 .popular {
-    background-color: lightgray;
+    background-color: #F2F2F2;
     width: 450px;
     margin: 10px auto;
     border-radius: 30px;
     padding: 15px;
+}
+
+.popular .most-txt {
+    display: flex;
 }
 
 h1  {
@@ -48,9 +54,47 @@ h3, p, .rating {
     margin: 5px;
 }
 
+h3 {
+    margin: auto;
+    padding: 5px 5px 5px 15px;
+}
+
 h2 {
-    font-weight: 900;
-    margin: 30px 10px 5px 35px;
+    font-weight: 700;
+    margin: auto;
+    padding: 5px;
+}
+
+.acc-txt p {
+    margin: auto;
+    padding: 5px 15px; 
+}
+
+.acc-txt .rating {
+    margin: auto;
+    padding: 5px 15px; 
+}
+
+.wrapper .hotel  img {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.details p {
+    margin: auto;
+    padding: 10px 15px; 
+    height: 60px;
+    
+}
+
+.details h3 {
+    margin-top: 10px;
+    height: 40px;
+}
+
+.pop-text .rating {
+    margin: auto;
+    padding: 5px 15px;
 }
 
 .show {
@@ -59,15 +103,44 @@ h2 {
     padding-bottom: 15px;
 }
 
-.acc-txt {
-    padding: 5px;
-    margin: 0;
+
+.accomodation h2 {
+    padding: 10px;
+    margin: 15px 0px 0px 15px;
 }
 
+.popular h2 {
+    padding: 10px 0px 0px 10px;
+    margin: 15px 0px 0px 15px;
+}
 
 a {
     text-decoration: none;
 }
+
+.logo-nav .logo {
+    margin: 15px;
+}
+
+.intro-line {
+    margin-left: 15px;;
+}
+
+.search_wrapper {
+    margin: 15px;
+}
+
+.filter {
+    margin: 15px;
+    font-weight: 800;
+}
+
+.more {
+    display: flex;
+    margin-left: 15px;
+    width: 410px;
+}
+
 
 ul {
     list-style: none;
@@ -131,7 +204,7 @@ img {
 .search-btn {
     font-size: 15px;
     border-style: none;
-    background-color: blue;
+    background-color: #0065FC;
     color: white;
     border-radius: 0 15px 15px 0;
     padding: 15px;
@@ -202,11 +275,16 @@ main .first-half {
 .fa fa-star {
     margin: 0;
     width: 150px;
+
+}
+
+.fa {
+    color: lightgray;
 }
 
 
 .checked {
-    color: blue;
+    color: #0065FC;
 }
 
 .mark {
@@ -223,12 +301,12 @@ main .first-half {
     padding: 7px;
     margin-right: 5px;
     border-radius: 80%;
-    border: 0.5px black solid;
+    border: 0.5px lightgray solid;
 }
 
 .ikon {
-    color: blue;
-    background-color: lightskyblue;
+    color: #0065FC;
+    background-color: #DEEBFF;
     padding: 15px;
     border-radius: 80%;
     
@@ -240,7 +318,7 @@ main .first-half {
 .btn {
     display: flex;
     font-size: 15px;
-    border: 1px gray solid;
+    border: 1px lightgray solid;
     border-radius: 25px;
     background-color: white;
     width: 180px;
@@ -255,7 +333,9 @@ main .first-half {
     vertical-align: middle;
 }
 
-
+.activities h2 {
+    margin: 40px 0px 0px 15px;
+}
 
 .act {
     width: 360px;
@@ -333,10 +413,7 @@ main .first-half {
     .accomodation {
         background-color: white;
         width: 500px;
-        margin: 0 auto;
-        
-        
-        
+        margin: 0 auto;         
     }
     
     .popular {
