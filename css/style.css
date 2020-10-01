@@ -39,9 +39,21 @@ body {
     padding: 15px;
 }
 
-.popular .most-txt {
-    display: flex;
+.popular h2 {
+    border: 1px solid red;
+    display: inline-block;
 }
+
+.popular i {
+    border: 1px solid red;
+    display: inline-block;
+}
+
+.popular .most-txt {
+    
+    
+}
+
 
 h1  {
     background-color: aquamarine;
