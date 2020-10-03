@@ -9,7 +9,6 @@ body {
     font-size: 1.6rem;
     width: 1550px;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
 
@@ -40,13 +39,12 @@ body {
 }
 
 .popular h2 {
-    border: 1px solid red;
     display: inline-block;
 }
 
 .popular i {
-    border: 1px solid red;
     display: inline-block;
+    margin-left: 230px;
 }
 
 .popular .most-txt {
@@ -142,9 +140,39 @@ a {
     margin: 15px;
 }
 
+.search_wrapper .search_field {
+    font-weight: 700;
+    width: 240px;
+}
+
 .filter {
     margin: 15px;
     font-weight: 800;
+}
+
+.buttons .btn:hover {
+    background-color: #0065FC;
+    color: white;
+}
+
+
+.filter .fil {
+    margin-right: 30px;
+    margin-top: 17px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filter .buttons {
+    margin-top: 10px;
+}
+
+.filter .buttons .btn {
+    margin-right: 15px;
+}
+
+.buttons strong {
+    font-size: 20px;
 }
 
 .more {
@@ -214,13 +242,15 @@ img {
 }
 
 .search-btn {
-    font-size: 15px;
+    font-size: 20px;
     border-style: none;
     background-color: #0065FC;
     color: white;
     border-radius: 0 15px 15px 0;
     padding: 15px;
+    padding-bottom: 18px;
     margin: 0;
+    width: 100px;
 
     
 }
@@ -301,7 +331,7 @@ main .first-half {
 
 .mark {
     background-color: lightgray;
-    padding: 16px;
+    padding: 20px;
     border-radius: 15px 0 0 15px;
 }
 
@@ -319,10 +349,8 @@ main .first-half {
 .ikon {
     color: #0065FC;
     background-color: #DEEBFF;
-    padding: 15px;
+    padding: 19px;
     border-radius: 80%;
-    
-    
     vertical-align: middle;
 
 }
@@ -331,18 +359,19 @@ main .first-half {
     display: flex;
     font-size: 15px;
     border: 1px lightgray solid;
-    border-radius: 25px;
+    border-radius: 28px;
     background-color: white;
-    width: 180px;
-    margin-left: 5px;
+    width: fit-content;
+    margin-left: 10px;
     padding: 0;
     text-align: center;
 }
 
 .buttons .btn strong {
-    padding: 10px;
-    
-    vertical-align: middle;
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 5px;
 }
 
 .activities h2 {
@@ -398,7 +427,13 @@ main .first-half {
     margin: 10px 100px 20px 20px;
 }
 
+/* Smarphone */
 @media screen and (max-width: 768px) {
+
+    body {
+        width: 768px;
+        
+    }
  
     .wrapper3 {
         flex-direction: column;
@@ -428,10 +463,17 @@ main .first-half {
         margin: 0 auto;         
     }
     
-    .popular {
-        background-color: white;
+    
+    .popular .wrapper2 .hotel {
         width: 500px;
         margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .popular {
+        width: 500px;
+        margin: 0 auto; 
+        padding: 40px;
     }
 
     .buttons {
@@ -447,6 +489,13 @@ main .first-half {
     .act {
         width: 500px;
         margin: 7px auto;
+        margin-bottom: 15px;
+        
+    }
+
+    .act h2 {
+        margin: 0 auto;
+        text-align: center;
     }
 
     .act img {
@@ -460,5 +509,30 @@ main .first-half {
     .foot {
         display: flex;
         flex-direction: column
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    main .first-half {
+        flex-direction: column;
+    }
+
+    .wrapper3 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .activities {
+        margin: 0 auto;
+    }
+
+    .activities h2 {
+        text-align: center;
+    }
+
+    .act {
+        margin: 0 auto;
     }
 }
