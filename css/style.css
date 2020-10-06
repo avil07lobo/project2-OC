@@ -6,10 +6,12 @@ html {
 
 body {
     font-family: "Raleway";
-    font-size: 1.6rem;
-    width: 1550px;
+    font-size: 1.5rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
+
+
 
 
 
@@ -23,7 +25,8 @@ body {
 
 .accomodation {
     background-color: #F2F2F2;
-    width: 63%;
+    width: 61%;
+    min-width: 889px;
     margin: 10px auto;
     border-radius: 30px;
     padding: 10px;
@@ -32,7 +35,8 @@ body {
 
 .popular {
     background-color: #F2F2F2;
-    width: 450px;
+    width: 30%;
+    min-width: 400px;
     margin: 10px auto;
     border-radius: 30px;
     padding: 15px;
@@ -44,11 +48,14 @@ body {
 
 .popular i {
     display: inline-block;
-    margin-left: 230px;
+    margin-top: 20px;
+    padding-right: 20px;
+    
 }
 
 .popular .most-txt {
-    
+    display: flex;
+    justify-content: space-between;
     
 }
 
@@ -86,14 +93,14 @@ h2 {
 }
 
 .wrapper .hotel  img {
-    height: 150px;
+    height: 130px;
     margin-bottom: 10px;
 }
 
 .details p {
     margin: auto;
     padding: 10px 15px; 
-    height: 60px;
+    height: 50px;
     
 }
 
@@ -104,7 +111,7 @@ h2 {
 
 .pop-text .rating {
     margin: auto;
-    padding: 5px 15px;
+    padding: 0px 15px 20px 15px;
 }
 
 .show {
@@ -191,7 +198,7 @@ ul {
 
 
 .nav-item {
-    margin: 10px;
+    margin: 15px 10px 10px 10px;
 }
 
 
@@ -213,8 +220,9 @@ img {
 
 .popular .hotel img {
     vertical-align: middle;
-    width: 175px;
-    height: 180px;
+    padding: 5px;
+    width: 140px;
+    height: 150px;
     border-radius: 30px 0 0 30px;
     
 }
@@ -262,12 +270,13 @@ main .first-half {
 
 
 
-.hotel {
+.accomodation .wrapper .hotel {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 280px;
-    height: 250px;
+    width: 28%;
+    min-width: 240px;
+    height: 230px;
     margin: 20px auto;
     padding: 5px;
     border-radius: 30px;
@@ -276,29 +285,22 @@ main .first-half {
 }
 
 .popular .wrapper2 .hotel {
-    width: 400px;
+    width: 90%;
+    min-width: 389px;
     margin: 30px auto;
-    height: 180px;
+    height: 160px;
+    background-color: white;
+    border-radius: 30px;
 }
 
 .popular .wrapper2 .hotel .container {
     display: flex;
 }
 
-.popular .wrapper2 .hotel .container .pop-img {
-    height: 00px;
-    margin-right: 10px;
-    padding: 0px;
-    
-}
-
-
-
 .buttons {
     display: flex;
     min-width: 100px;
 
-    
 
 }
 
@@ -379,19 +381,19 @@ main .first-half {
 }
 
 .act {
-    width: 360px;
-    background-color: whitesmoke;
+    width: 85%;
+    background-color: white;
     margin: 20px;
     padding: 0;
     border-radius: 30px;
     height: 200px;
-    box-shadow: 10px 5px 5px lightgray;
+    box-shadow: 3px 3px 3px 3px whitesmoke;
     
 }
 
 .act img {
     width: 100%;
-    height: 150px;
+    height: 130px;
     border-radius: 30px 30px 0 0;
 }
 
@@ -406,17 +408,23 @@ main .first-half {
 
 .wrapper3 > .act:nth-child(2n + 1) {
     height: 430px;
-    width: 360px;
+    width: 75%;
 }
 
 .wrapper3 > .act img:nth-child(2n + 1) {
-    height: 380px;
+    height: 370px;
     width: 100%;
+}
+
+.wrapper3 h3 {
+    padding: 15px;
+    font-weight: 700;
 }
 
 
 
 .foot {
+    width: 100%;
     display: flex;
     margin: 50px 0 0 0;
     background-color: lightgray;
@@ -427,28 +435,47 @@ main .first-half {
     margin: 10px 100px 20px 20px;
 }
 
-/* Smarphone */
-@media screen and (max-width: 768px) {
-
-    body {
-        width: 768px;
-        
-    }
+/* Smartphone */
+@media screen and (max-width: 480px) {
  
+    .intro-line {
+        width: 400px;
+    }
+
+    .search-wrapper .search_field {
+        width: 300px;
+    }
+
+    .search_wrapper span {
+        size: 5px;
+    }
+
+    .wrapper .hotel {
+        width: 200px;
+    }
+    
+    .wrapper2 .hotel {
+        width: 350px;
+    }
+    
+    
     .wrapper3 {
         flex-direction: column;
+        
     
         
     }
 
     .wrapper3 > .act:nth-child(2n + 1) {
-        height: 200px;
+        height: 150px;
+        width: 400px;
         
     
     }
 
     .wrapper3 > .act img:nth-child(2n + 1) {
         height: 150px;
+        
         
     
     }
@@ -459,21 +486,19 @@ main .first-half {
 
     .accomodation {
         background-color: white;
-        width: 500px;
+        max-width: 400px;
         margin: 0 auto;         
     }
     
-    
-    .popular .wrapper2 .hotel {
-        width: 500px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
 
     .popular {
-        width: 500px;
+        width: 350px;
         margin: 0 auto; 
         padding: 40px;
+    }
+
+    .popular .hotel {
+        width: 350px;
     }
 
     .buttons {
@@ -482,28 +507,30 @@ main .first-half {
     }
 
     .hotel {
-        width: 500px;
+        width: 400px;
         margin: 7px auto;
     }
 
     .act {
-        width: 500px;
+        width: 400px;
         margin: 7px auto;
         margin-bottom: 15px;
         
     }
 
-    .act h2 {
+    .activities h2 {
         margin: 0 auto;
-        text-align: center;
+        margin-left: 70px;
+        position: relative;
+
     }
 
     .act img {
-        width: 500px;
+        width: 480px;
     }
 
     .wrapper3 > .act:nth-child(2n + 1) {
-        width: 500px;
+        width: 400px;
     }
 
     .foot {
@@ -512,7 +539,7 @@ main .first-half {
     }
 }
 
-/* Tablet */
+/* Tablet 
 @media screen and (max-width: 1024px) {
     main .first-half {
         flex-direction: column;
@@ -535,4 +562,4 @@ main .first-half {
     .act {
         margin: 0 auto;
     }
-}
+} */
