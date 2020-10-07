@@ -275,7 +275,7 @@ main .first-half {
     flex-direction: column;
     background-color: white;
     width: 28%;
-    min-width: 240px;
+    min-width: 28%;
     height: 230px;
     margin: 20px auto;
     padding: 5px;
@@ -436,8 +436,9 @@ main .first-half {
 }
 
 /* Smartphone */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
  
+    
     .intro-line {
         width: 400px;
     }
@@ -449,13 +450,20 @@ main .first-half {
     .search_wrapper span {
         size: 5px;
     }
+    
+
+    .accomodation .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
 
     .wrapper .hotel {
-        width: 200px;
+        width: 480px;
     }
     
     .wrapper2 .hotel {
-        width: 350px;
+        width: 100%;
     }
     
     
@@ -467,8 +475,8 @@ main .first-half {
     }
 
     .wrapper3 > .act:nth-child(2n + 1) {
-        height: 150px;
-        width: 400px;
+        height: 200px;
+        width: 100%;
         
     
     }
@@ -484,21 +492,22 @@ main .first-half {
         flex-direction: column-reverse;
     }
 
-    .accomodation {
+    .wrapper {
         background-color: white;
-        max-width: 400px;
-        margin: 0 auto;         
+        width: 100%;
+        border: 2px solid red;         
     }
     
 
     .popular {
-        width: 350px;
+        width: 100%;
         margin: 0 auto; 
         padding: 40px;
+        position: relative;
     }
 
     .popular .hotel {
-        width: 350px;
+        width: 100%;
     }
 
     .buttons {
@@ -512,8 +521,8 @@ main .first-half {
     }
 
     .act {
-        width: 400px;
-        margin: 7px auto;
+        width: 90%;
+        margin: 0 auto;
         margin-bottom: 15px;
         
     }
@@ -526,11 +535,11 @@ main .first-half {
     }
 
     .act img {
-        width: 480px;
+        width: 100%;
     }
 
     .wrapper3 > .act:nth-child(2n + 1) {
-        width: 400px;
+        width: 90%;
     }
 
     .foot {
