@@ -135,7 +135,10 @@ a {
 }
 
 .logo-nav .logo {
-    margin: 0px 15px 15px 15px;
+    margin-left: 15px;
+    padding: 0;
+    display: block;
+    
 }
 
 .intro-line {
@@ -189,15 +192,26 @@ a {
 
 
 ul {
-    list-style: none;
+    list-style-type: none;
     display: flex;
-    justify-content: center;
-    margin: 10px auto;
+    margin: 0;
+    padding: 0;
+    
+    
+    
+}
+
+li a {
+    
+    display: block;
+    text-align: center;
+    
+
 }
 
 
 .nav-item {
-    margin: 15px 10px 10px 10px;
+    margin: 0;
 }
 
 
@@ -458,19 +472,13 @@ main .first-half {
         size: 5px;
     }
     
-    .nav .nav-list {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        
+    ul {
+        margin: 0;
+        padding: 0;
     }
+    
 
-    .nav-mob {
-        width: 100%;
-        
-        display: flex;
-        
-        
-    }
+
 
     
     
