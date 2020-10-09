@@ -157,6 +157,8 @@ a {
 .filter {
     margin: 15px;
     font-weight: 800;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .buttons .btn:hover {
@@ -395,8 +397,14 @@ main .first-half {
     margin: 40px 0px 0px 15px;
 }
 
+.wrapper3 {
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 .act {
-    width: 85%;
+    width: 90%;
     background-color: white;
     margin: 20px;
     padding: 0;
@@ -412,21 +420,34 @@ main .first-half {
     border-radius: 30px 30px 0 0;
 }
 
+.int-wrapper3 {
+    width: 50%;
+}
 
-.wrapper3 {
+
+
+.wrapper3 .act-wrap {
     display: flex;
     justify-content: center;
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
 
-    
 }
 
-.wrapper3 > .act:nth-child(2n + 1) {
+.act-tab {
+    display: flex;
+    margin: 0 auto;
+    min-width: 50%;
+    max-width: 50%;
+}
+
+.act-tab > .act:nth-child(2n + 1) {
     height: 430px;
-    width: 75%;
+    width: 50%;
 }
 
-.wrapper3 > .act img:nth-child(2n + 1) {
+.act-tab > .act img:nth-child(2n + 1) {
     height: 370px;
     width: 100%;
 }
@@ -544,6 +565,8 @@ main .first-half {
     .buttons {
         flex-wrap: wrap;
         margin: 10px;
+        min-width: 60%;
+        max-width: 60%;
     }
 
 
@@ -574,16 +597,61 @@ main .first-half {
     }
 }
 
-/* Tablet 
-@media screen and (max-width: 1024px) {
+/* Tablet */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    
+    body, html {
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0 auto;
+    }
+    
     main .first-half {
         flex-direction: column;
     }
 
+    .accomodation {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    .popular {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
     .wrapper3 {
+        margin: 0 auto;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .tablet-wrap1 {
+        display: flex;
+    }
+
+    .tablet-wrap1 .hotel {
+        min-width: 45%;
+        max-width: 45%;
+    }
+
+    .wrapper2 .hotel {
+        min-width: 45%;
+        max-width: 45%; 
+    }
+
+    .act-wrap {
         display: flex;
         flex-direction: column;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .act-tab {
+        min-width: 90%;
+        max-width: 90%;
         margin: 0 auto;
+        margin-bottom: 15px;
     }
     
     .activities {
@@ -596,5 +664,6 @@ main .first-half {
 
     .act {
         margin: 0 auto;
+        margin-bottom: 15px;
     }
-} */
+} 
