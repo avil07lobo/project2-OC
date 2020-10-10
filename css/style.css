@@ -499,25 +499,54 @@ main .first-half {
     }
     
 
+    .filter button {
+        margin-bottom: 10px;
+    }
+
+    #rom{
+        order: 1;
+    }
 
 
     
     
-    .wrapper3 {
+    .act-wrap {
         flex-direction: column;
+        margin: 0 auto;
         
     
         
     }
 
-    .wrapper3 > .act:nth-child(2n + 1) {
+    .act-tab {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .act {
+        margin: 0 auto;
+        min-width: 80%;
+        max-width: 80%;
+        height: 200px;
+    }
+
+    .int-wrapper3 {
+        margin: 0 auto;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .act-tab > .act:nth-child(2n + 1) {
         height: 200px;
         width: 100%;
         
     
     }
 
-    .wrapper3 > .act img:nth-child(2n + 1) {
+    .act-tab > .act img:nth-child(2n + 1) {
         height: 150px;
         
         
@@ -545,21 +574,22 @@ main .first-half {
     }
 
     .accomodation .hotel {
-        min-width: 90%;
-        max-width: 90%;
+        min-width: 80%;
+        max-width: 80%;
         
     }
 
 
     .popular {
-        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
         margin: 0 auto; 
         padding: 40px;
         
     }
 
     .popular .hotel {
-        width: 100%;
+        width: 80%;
     }
 
     .buttons {
@@ -574,6 +604,7 @@ main .first-half {
         width: 90%;
         margin: 0 auto;
         margin-bottom: 15px;
+        height: 200px;
         
     }
 
@@ -587,9 +618,7 @@ main .first-half {
         width: 100%;
     }
 
-    .wrapper3 > .act:nth-child(2n + 1) {
-        width: 90%;
-    }
+   
 
     .foot {
         display: flex;
