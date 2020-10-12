@@ -669,6 +669,11 @@ main .first-half {
         max-width: 45%; 
     }
 
+    .wrapper2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .act-wrap {
         display: flex;
         flex-direction: column;
