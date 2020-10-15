@@ -20,9 +20,37 @@ header {
 }
 
 .logo-nav {
+    display: flex;
+    justify-content: space-between;
     font-size: 1.2em;
     margin: 2em 0 2.5em 0;
 }
+
+
+.logo-nav .logo {
+    padding: 0;
+    display: block;
+    
+}
+
+.logo-nav #res-logo {
+    width: 30%;
+    height: 4em;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav a {
+    padding: 20px 30px;
+}
+
+.nav a:hover {
+    border-top: 2px solid blue;
+    opacity: 1.0;
+}
+
 
 .intro-line h2 {
     font-size: 2em;
@@ -42,19 +70,20 @@ header {
 
 .search_wrapper {
     display: flex; 
-    margin: 0;
+    margin-bottom: 2em;
 }
 
 .mark {
     background-color: #F2F2F2;
-    padding: 0.7em;
+    padding: 0.75em;
     border-radius: 1em 0 0 1em;
 }
 
 .search_wrapper .search_field {
     display: inline-block;
     font-weight: 700;
-    width: 200px;
+    font-size: 1.5em;
+    width: 10em;
     border: 2px solid #F2F2F2;
     padding: 1em;
 
@@ -66,9 +95,71 @@ header {
     background-color: #0065FC;
     color: white;
     border-radius: 0 1em 1em 0;
-    padding: 15px;
+    padding: 1em;
     margin: 0;
-    width: 100px;   
+    width: 5em;   
+}
+
+
+.filter {
+    margin: 1em 1em 1em 0;
+    font-weight: 800;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.filter .fil {
+    margin-right: 1.7em;
+    margin-top: 1.1em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.buttons .btn:hover {
+    background-color: #0065FC;
+    color: white;
+}
+
+
+
+.ikon {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 1.1em;
+    border-radius: 2em;
+    vertical-align: middle;
+
+}
+
+.btn {
+    display: flex;
+    font-size: 1.2em;
+    border: 1px lightgray solid;
+    border-radius: 2em;
+    background-color: white;
+    margin-left: 0.7em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 0;
+    text-align: center;
+}
+
+.buttons .btn strong {
+    padding: 1em;
+    text-align: center;
+    margin: 0 auto;
+    
+
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 10em;
+    margin-top: 1em;
+    
 }
 
 
@@ -194,48 +285,7 @@ a {
     text-decoration: none;
 }
 
-.logo-nav .logo {
-    margin-left: 15px;
-    padding: 0;
-    display: block;
-    
-}
 
-.intro-line {
-    margin-left: 15px;;
-}
-
-.filter {
-    margin: 15px;
-    font-weight: 800;
-    min-width: 100%;
-    max-width: 100%;
-}
-
-.buttons .btn:hover {
-    background-color: #0065FC;
-    color: white;
-}
-
-
-.filter .fil {
-    margin-right: 30px;
-    margin-top: 17px;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.filter .buttons {
-    margin-top: 10px;
-}
-
-.filter .buttons .btn {
-    margin-right: 15px;
-}
-
-.buttons strong {
-    font-size: 20px;
-}
 
 .more {
     display: flex;
@@ -263,25 +313,7 @@ li a {
 }
 
 
-.nav-item {
-    margin: 0;
-}
 
-
-
-.nav a {
-    padding: 20px 30px;
-}
-
-.nav a:hover {
-    border-top: 2px solid blue;
-    opacity: 1.0;
-}
-
-.logo-nav #logo {
-    width: 30%;
-    height: 50px;
-}
 
 
 .popular .hotel img {
@@ -316,10 +348,10 @@ main .first-half {
     flex-direction: column;
     background-color: white;
     width: 29%;   
-    height: 230px;
-    margin: 20px auto;
+    height: 18em;
+    margin: 2em auto;
     padding: 5px;
-    border-radius: 30px;
+    border-radius: 33px;
     box-shadow: 10px 5px 5px lightgray;
 
 }
@@ -336,34 +368,6 @@ main .first-half {
     display: flex;
 }
 
-.buttons {
-    display: flex;
-    min-width: 100px;
-
-
-}
-
-.filter {
-    display: flex;
-    margin-top: 10px;
-    
-
-}
-
-.logo-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-mob {
-    display: flex;
-}
-
-.fa fa-star {
-    margin: 0;
-    width: 150px;
-
-}
 
 .fa {
     color: lightgray;
@@ -387,32 +391,7 @@ main .first-half {
     border: 0.5px lightgray solid;
 }
 
-.ikon {
-    color: #0065FC;
-    background-color: #DEEBFF;
-    padding: 19px;
-    border-radius: 80%;
-    vertical-align: middle;
 
-}
-
-.btn {
-    display: flex;
-    font-size: 15px;
-    border: 1px lightgray solid;
-    border-radius: 28px;
-    background-color: white;
-    width: fit-content;
-    margin-left: 10px;
-    padding: 0;
-    text-align: center;
-}
-
-.buttons .btn strong {
-    padding: 15px;
-    text-align: center;
-    margin: 0 auto;
-    margin-right: 5px;
 }
 
 .activities h2 {
@@ -615,6 +594,7 @@ main .first-half {
     }
 
     .buttons {
+        display: flex;
         flex-wrap: wrap;
         margin: 10px;
         min-width: 60%;
@@ -722,5 +702,13 @@ main .first-half {
     .act {
         margin: 0 auto;
         margin-bottom: 15px;
+    }
+
+    .filter {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: fit-content;
+        margin: 1em;
     }
 } 
