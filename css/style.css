@@ -178,31 +178,52 @@ header {
     
 }
 
+/*
+.infor {
+    font-size: small;
+    font-weight: lighter;
+    color: #0065FC;
+    background-color: white;
+    padding: 7px;
+    margin-right: 5px;
+    border-radius: 80%;
+    border: 0.5px lightgray solid;
+}
+
 .more {
     display: flex;
     
-    
-    width: 30em;
-
-    font-family: 'Raleway', sans-serif;
+    width: 410px;
 }
+*/
+
 
 .infor {
-    
+    display: inline-block;
     font-size: small;
     font-weight: 400;
     color: #0065FC;
     background-color: white;
     padding: 7px;
-
     border-radius: 80%;
     border: 0.5px lightgray solid;
 }
 
+
 .more p {
     display: block;
-    margin: 0 auto;
+    margin-left: 0.5em;
+    font-size: 1.5em;
+}    
+
+
+.more {
+    display: flex;
+    width: 35%;
 }
+
+
+
 
 
 
@@ -268,11 +289,13 @@ main {
     
 }
 
+/*
 h3, p, .rating {
     
     padding: 0.2em;
     
 }
+*/
 
 .acc-txt {
     margin-left: 0.5em;
