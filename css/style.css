@@ -195,9 +195,7 @@ main {
     margin-left: 0.5em;
     font-size: 1.5em;
     height: 0.6em;
-    width: 95%;
-    
-    
+    width: 25%;    
 }    
 
 .infor {
@@ -432,10 +430,9 @@ li a {
 .act {
     width: 100%;
     background-color: white;
-    margin: 0;
+    margin: auto;
     padding: 0;
     border-radius: 30px;
-    
     box-shadow: 3px 3px 3px 3px whitesmoke;
     
 }
@@ -450,7 +447,7 @@ li a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
 }
 
@@ -458,9 +455,9 @@ li a {
 
 
 
+
 .wrapper3 .act-wrap {
-    display: flex;
-    justify-content: center; 
+    display: flex; 
     min-width: 100%;
     max-width: 100%;
     margin: 0;
@@ -476,7 +473,7 @@ li a {
 
 .act-tab > .act:nth-child(2n + 1) {
     height: 43em;
-    width: 50%;
+    width: 45%;
 }
 
 .act-tab > .act img:nth-child(2n + 1) {
@@ -495,7 +492,7 @@ li a {
     width: 100%;
     display: flex;
     margin: 50px 0 0 0;
-    background-color: lightgray;
+    background-color: #F2F2F2;
 }
 
 .misc {
@@ -535,11 +532,19 @@ li a {
         margin-bottom: 10px;
     }
 
-    #rom{
+
+    .buttons .btn:nth-child(1) {
         order: 1;
     }
-
-
+    .buttons .btn:nth-child(2) {
+        order: 1;
+    }
+    .buttons .btn:nth-child(3) {
+        order: 1;
+    }
+    .buttons .btn:nth-child(4) {
+        order: 1;
+    }
     
     
     .act-wrap {
