@@ -8,7 +8,8 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     
-    width: 85%;
+    
+    max-width: 1800px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0;
@@ -16,12 +17,12 @@ body {
 
 
 header {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
 }
 
 main {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
@@ -194,8 +195,8 @@ main {
     margin: 0;
     margin-left: 0.5em;
     font-size: 1.5em;
-    height: 0.6em;
-    width: 25%;    
+    
+    width: 92%;    
 }    
 
 .infor {
@@ -231,7 +232,8 @@ main {
 
 .accomodation {
     background-color: #F2F2F2;
-    width: 62%;   
+    min-width: 62%;
+    max-width: 62%;   
     margin-top: 1em;
     margin-bottom: 1em;
     border-radius: 2.5em;
@@ -242,8 +244,9 @@ main {
 .accomodation h2 {
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    font-size: 2em;
-    margin: 2em 2em 1em 2em;
+    font-size: 2.2em;
+    margin: 0.75em 2em 1em 2em;
+    padding-top: 0.5em;
 }
 
 
@@ -278,7 +281,7 @@ main {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 27%;   
+    width: 28%;   
     height: 20em;
     margin: 2em;
     padding: 0.5em;
@@ -291,20 +294,22 @@ main {
     height: 13em;
     margin-bottom: 10px;
     border-radius: 2em 2em 0 0;
+    object-fit: cover;
     
 }
 
 .show {
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 2em 2em 1em 3.4em;
 }
 
 
 .popular {
     background-color: #F2F2F2;
-    width: 30%;
+    min-width: 29%;
+    max-width: 29%;
     margin-bottom: 1em;
     margin-top: 1em;
     border-radius: 3em;
@@ -315,9 +320,9 @@ main {
     display: inline-block;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    font-size: 2em;
+    font-size: 2.2em;
     padding: 0.5em 0 0px 0.5em;
-    margin: 0.75em 0 0 0.75em;
+    margin: 0.75em 0 1em 0.75em;
 }
 
 
@@ -349,6 +354,7 @@ main {
     width: 14em;
     height: 15em;
     border-radius: 2em 0 0 2em;
+    object-fit: cover;
     
 }
 
@@ -417,44 +423,80 @@ li a {
 .activities h2 {
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    font-size: 2em;
-    margin: 2em 2em 1em 2em;
+    font-size: 2.2em;
+    margin: 2em 2em 1em 1em;
 }
 
 .wrapper3 {
     width: 100%;
-
+    min-width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
 .act {
     width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     background-color: white;
     margin: auto;
     padding: 0;
     border-radius: 30px;
     box-shadow: 3px 3px 3px 3px whitesmoke;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
     
 }
 
 .act img {
     width: 100%;
-    height: 130px;
     border-radius: 30px 30px 0 0;
+    object-fit: cover;
 }
+
+.img-short {
+    height: 14em;
+    object-fit: cover;
+}
+
+.img-pf {
+    height: 18em;
+    object-fit: cover;
+}
+
+.img-fi {
+    height: 10em;
+    object-fit: cover;
+}
+
 
 .int-wrapper3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 45%;
+    height: 43em;
+    min-width: 45%;
+    max-width: 45%s;
     margin: 0 auto;
+}
+
+.int-wrapper3 .act:nth-child(1) {
+    height: 60%;
+    margin-bottom: 2.5em;
+    
 }
 
 
 
+.int-wrapper3 .act:nth-child(2) {
+    height: 40%;
+    
+}
 
-
+#act5, #act6 {
+    height: 50%;
+}
 
 .wrapper3 .act-wrap {
     display: flex; 
@@ -474,6 +516,8 @@ li a {
 .act-tab > .act:nth-child(2n + 1) {
     height: 43em;
     width: 45%;
+    min-width: 45%;
+    max-width: 45%;
 }
 
 .act-tab > .act img:nth-child(2n + 1) {
@@ -482,22 +526,28 @@ li a {
 }
 
 .wrapper3 h3 {
-    padding: 15px;
+    padding: 0;
     font-weight: 700;
+    font-size: 1.8em;
+    font-family: 'Raleway', sans-serif;
+    margin: 1em;
 }
 
 
 
 .foot {
-    width: 100%;
+    width: 85%;
     display: flex;
-    margin: 50px 0 0 0;
+    margin: 0 auto;
+    margin-top: 5em;
     background-color: #F2F2F2;
 }
 
 .misc {
     width: 30%;
-    margin: 10px 100px 20px 20px;
+    margin: 1em 10em 2em 3em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
 }
 
 /* Smartphone */
@@ -748,3 +798,131 @@ li a {
         margin: 1em;
     }
 } 
+
+@media screen and (min-width: 1345px) and (max-width: 1779px){
+    body, html {
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0 auto;
+    }
+
+    .accomodation {
+        background-color: #F2F2F2;
+        min-width: 62%;
+        max-width: 62%;
+    }
+
+    .popular {
+        background-color: #F2F2F2;
+        min-width: 29%;
+        max-width: 29%;
+    }
+
+    .accomodation .wrapper .hotel {
+        width: 26%;   
+    }
+
+    .popular .wrapper2 .hotel {
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1345px){
+    body, html {
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0 auto;
+    }
+
+    .accomodation {
+        background-color: #F2F2F2;
+        min-width: 62%;
+        max-width: 62%;
+    }
+
+    .popular {
+        background-color: #F2F2F2;
+        min-width: 29%;
+        max-width: 29%;
+    }
+
+    .accomodation .wrapper .hotel {
+        width: 40%;   
+    }    
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+    
+    
+    
+    main .first-half {
+        display: flex;
+        flex-direction: column-reverse;
+
+        margin: 0 auto;
+    }
+
+    .accomodation {
+        background-color: #F2F2F2;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 2em;
+        padding: 0;
+    }
+
+    .accomodation h2 {
+        text-align: center;
+    }
+
+    .accomodation .hotel {
+        min-width: 25%;
+        max-width: 25%;
+        margin: 0 auto;
+    }
+
+    .popular {
+        background-color: #F2F2F2;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%; 
+        margin: 0;  
+        padding: 0;
+    }
+
+    .most-txt {
+        display: flex;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .popular .hotel {
+        min-width: 45%;
+        max-width: 45%;
+    }
+
+    .act-wrap {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .act-tab {
+        min-width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+    }
+
+    .activities h2 {
+        text-align: center;
+    }
+
+}
