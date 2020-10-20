@@ -8,7 +8,7 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     
-    
+    box-sizing: border-box;
     max-width: 1800px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -38,7 +38,38 @@ main {
     margin: 0 auto;
 }
 
+.logo-nav-sub1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 2em 0 2.5em 0;
+    
+    
+}
+
+.logo-nav-sub2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 16%;
+    margin: 2em 0 2.5em 0; 
+    font-size: 1.2em;  
+}
+
 .logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+#nav-acc {
+    text-align: right;
+    font-size: 1.2em;
+}
+
+/* .logo-nav {
     display: flex;
     justify-content: space-between;
     font-size: 1.2em;
@@ -50,10 +81,11 @@ main {
     padding: 0;
     display: block;
     
-}
+} */
 
 .logo-nav #res-logo {
-    width: 30%;
+    width: 8em;
+    min-width: 8em;
     height: 4em;
 }
 
@@ -63,11 +95,11 @@ main {
     font-size: 1.2em;
 }
 
-.nav a {
+.navg a {
     padding: 1em 2em;
 }
 
-.nav a:hover {
+.navg a:hover {
     border-top: 2px solid blue;
     opacity: 1.0;
 }
@@ -539,7 +571,7 @@ li a {
     width: 85%;
     display: flex;
     margin: 0 auto;
-    margin-top: 5em;
+    margin-top: 2em;
     background-color: #F2F2F2;
 }
 
@@ -554,11 +586,17 @@ li a {
 @media screen and (max-width: 480px) {
  
     body, html {
+        width: 100%;
         max-width: 100%;
         min-width: 100%;
         margin: 0 auto;
     }
-
+    
+    main {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
 
     .intro-line {
         width: 400px;
@@ -587,58 +625,96 @@ li a {
         order: 1;
     }
     .buttons .btn:nth-child(2) {
-        order: 1;
+        order: 2;
     }
     .buttons .btn:nth-child(3) {
-        order: 1;
+        order: 4;
     }
     .buttons .btn:nth-child(4) {
-        order: 1;
+        order: 3;
+    }
+    
+
+     .wrapper3 {
+        width: 100%;
+        margin: 0;
     }
     
     
     .act-wrap {
         flex-direction: column;
-        margin: 0 auto;
-        
-    
-        
-    }
-
-    .act-tab {
-        flex-direction: column;
         justify-content: center;
         margin: 0 auto;
+        width: 100%;
         min-width: 100%;
         max-width: 100%;
     }
 
+    
+    .act-tab {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 2.5em;
+        min-width: 100%;
+        max-width: 100%;
+        padding-bottom: 0;
+    }
+
+    
+    .activities h2 {
+        text-align: center;
+    }
+
+    
     .act {
         margin: 0 auto;
+        margin-bottom: 2.5em;
         min-width: 80%;
         max-width: 80%;
         height: 200px;
+        width: 80%;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
+    .act img {
+        width: 100%;
+    }
+
+    
     .int-wrapper3 {
         margin: 0 auto;
         min-width: 100%;
         max-width: 100%;
+        
+    }
+    
+    #act-2, #act-3, #act5, #act6 {
+        height: 200px;
+        
     }
 
+    .img-fi, .img-pf, .img-short {
+        height: 150px;
+    }
+
+    
     .act-tab > .act:nth-child(2n + 1) {
         height: 200px;
-        width: 100%;
+        width: 80%;
+        min-width: 80%;
+        max-width: 80%;
         
-    
     }
 
     .act-tab > .act img:nth-child(2n + 1) {
         height: 150px;
-        
-        
-    
     }
+
+    
+
 
     main .first-half {
         flex-direction: column-reverse;
@@ -646,8 +722,6 @@ li a {
         max-width: 100%;
     }
 
-    
-    
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -655,29 +729,41 @@ li a {
         max-width: 100%;
     }
 
+    .accomodation .wrapper .hotel {
+        margin: 0 auto;
+        margin-bottom: 2em;
+        
+    }
+
     .accomodation {
         min-width: 100%;
         max-width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .accomodation .hotel {
         min-width: 80%;
         max-width: 80%;
+
         
     }
-
 
     .popular {
         min-width: 100%;
         max-width: 100%;
-        margin: 0 auto; 
-        padding: 40px;
-        
+        width: 100%; 
+        margin: 0;  
+        padding: 0;
+        margin-bottom: 2em;
+
     }
 
-    .popular .hotel {
-        width: 80%;
-    }
+    .wrapper2 .hotel {
+        min-width: 80%;
+        max-width: 80%; 
+        margin: 0;
+    } 
 
     .buttons {
         display: flex;
@@ -687,30 +773,18 @@ li a {
         max-width: 60%;
     }
 
-
-    .act {
-        width: 90%;
-        margin: 0 auto;
-        margin-bottom: 15px;
-        height: 200px;
-        
-    }
-
-    .activities h2 {
-        margin: 0 auto;
-        margin-left: 70px;
-
-    }
-
-    .act img {
-        width: 100%;
-    }
-
-   
-
     .foot {
         display: flex;
         flex-direction: column
+    }
+
+    footer {
+        width: 100%;
+
+    }
+
+    .foot {
+        width: 100%;
     }
 }
 
@@ -722,44 +796,53 @@ li a {
         min-width: 100%;
         margin: 0 auto;
     }
+
+    main {
+        width: 100%;
+    }
     
     main .first-half {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .accomodation {
         min-width: 100%;
         max-width: 100%;
+        width: 100%; 
+        margin: 0;
+        margin-top: 2em;  
+        padding: 0;
+    }
+
+    .accomodation h2 {
+        text-align: center;
     }
     
     .popular {
         min-width: 100%;
         max-width: 100%;
+        width: 100%; 
+        margin: 0;  
+        padding: 0;
     }
 
     .wrapper3 {
         margin: 0 auto;
         min-width: 100%;
         max-width: 100%;
+        
     }
 
-    .tablet-wrap1 {
-        display: flex;
-    }
-
-    .tablet-wrap1 .hotel {
-        min-width: 45%;
-        max-width: 45%;
-    }
 
     .wrapper2 .hotel {
         min-width: 45%;
         max-width: 45%; 
-    }
+        margin: auto;
+    } 
 
     .wrapper2 {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .act-wrap {
@@ -797,6 +880,15 @@ li a {
         width: fit-content;
         margin: 1em;
     }
+
+    footer {
+        width: 100%;
+
+    }
+
+    .foot {
+        width: 100%;
+    }
 } 
 
 @media screen and (min-width: 1345px) and (max-width: 1779px){
@@ -826,6 +918,15 @@ li a {
         width: 90%;
     }
 
+    footer {
+        width: 100%;
+
+    }
+
+    .foot {
+        width: 100%;
+    }
+
 
 }
 
@@ -850,19 +951,59 @@ li a {
 
     .accomodation .wrapper .hotel {
         width: 40%;   
-    }    
+    }
+    
+    footer {
+        width: 100%;
+
+    }
+
+    .foot {
+        width: 100%;
+    }
 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1150px) {
     
+
+    .logo-nav-sub1 {
+        display: flex;
+        flex-direction: column;
+        
+        align-items: flex-start;
+        width: 50%;
+        
+    }
+
+    #nav-acc {
+        text-align: center;
+        border: 2px solid black;
+        width: 100%;
+    }
+
+    .logo-nav-sub2 {
+        display: flex;
+        flex-direction: column-reverse;
+        
+        align-items: flex-end;
+        width: 50%;
+        
+    }
+
+    main {
+        width: 100%;
+
+    }
     
     
     main .first-half {
         display: flex;
         flex-direction: column-reverse;
-
-        margin: 0 auto;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0;
+        
     }
 
     .accomodation {
@@ -870,7 +1011,7 @@ li a {
         width: 100%;
         min-width: 100%;
         max-width: 100%;
-        margin: 0 auto;
+        margin: 0;
         margin-top: 2em;
         padding: 0;
     }
@@ -906,23 +1047,80 @@ li a {
         max-width: 45%;
     }
 
+
     .act-wrap {
         display: flex;
+        justify-content: space-around;
         flex-direction: column;
         min-width: 100%;
         max-width: 100%;
-        margin: 0 auto;
+        margin: auto;
     }
 
     .act-tab {
-        min-width: 90%;
-        max-width: 90%;
+        display: flex;
+        justify-content: space-around;
+        min-width: 70%;
+        max-width: 70%;
         margin: 0 auto;
-        margin-bottom: 1.5em;
+        margin-bottom: 2.5em;
     }
 
     .activities h2 {
         text-align: center;
     }
 
+    footer {
+        width: 100%;
+
+    }
+
+    .foot {
+        width: 100%;
+    }
+
 }
+
+/* @media screen and (min-width: 480px) and (max-width: 700px) {
+    main .first-half {
+        display: flex;
+        flex-direction: column-reverse;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0;
+        
+    }
+
+    main {
+        width: 100%;
+
+    }
+
+    .accomodation {
+        background-color: #F2F2F2;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0;
+        margin-top: 2em;
+        padding: 0;
+    }
+
+    .popular {
+        background-color: #F2F2F2;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%; 
+        margin: 0;  
+        padding: 0;
+    }
+
+    footer {
+        width: 100%;
+
+    }
+
+    .foot {
+        width: 100%;
+    }
+} */
