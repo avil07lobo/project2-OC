@@ -32,7 +32,7 @@
             </nav>
         </section> -->
 
-        <section class="logo-nav">
+        <nav class="logo-nav">
             <div class="logo-nav-sub1">
                 <a href="index.html" class="logo">
                     <img id="res-logo" src="img/logo.png" alt="Reservia logo">
@@ -41,12 +41,11 @@
             </div>
             
             <div class="logo-nav-sub2">
-                
                 <a href="#act-nav" class="nav-link" id="nav-act">Activities</a>
-                <a href="" class="nav-link"><strong>Sign Up</strong></a>            
+                <a href="" class="nav-link" id="nav-signup"><strong>Sign Up</strong></a>            
             </div>
                     
-        </section>
+        </nav>
 
         <section class="intro-line">
             <h2>Find a place for your dream vacation</h2>
@@ -55,19 +54,20 @@
         <div class="search_wrapper">
             <span class="fas fa-map-marker-alt fa-2x mark"></span>
             <input type="text" class="search_field" placeholder="Marseille, France">
-            <input type="button" value="Search" class="search-btn"> 
+            <input type="button" value="Search" class="search-btn">
+            <!-- <button class="search-btn"><i class="fas fa-search"></i><span>Search</span></button>  -->
         </div>
         <section class="filter">
             <section class="fil">
                 <p>Filters</p>
             </section>
             
-            <section class="buttons">
+            <div class="buttons">
                 <button class="btn"><span class="fas fa-money-bill-wave ikon"></span><strong>Low cost</strong></button>
                 <button class="btn"><span class="fas fa-child ikon"></span> <strong>Family-friendly</strong></button>
                 <button class="btn" id="rom"><span class="fas fa-heart ikon"></span> <strong>Romantic</strong></button>
                 <button class="btn"><span class="fas fa-dog ikon"></span> <strong>Pets allowed</strong></button>
-            </section>
+            </div>
 
         </section>
         <div class="more">
@@ -322,18 +322,18 @@
     <footer>
         <section class="foot">
             <section class="misc">
-                <p><strong>About</strong></p>
+                <h3>About</h3>
                 <p>Site Map</p>
                 <p>General Terms and Conditions</p>
                 <p>Date and Privacy</p>
             </section>
             <section class="misc">
-                <p><strong>Accomodations</strong></p>
+                <h3>Our Accomodations</h3>
                 <p>Quality Assessment</p>
                 <p>You have a hotel?</p>
             </section>
-            <section class="misc">
-                <p><strong>Assistance</strong></p>
+            <section class="misc" id="assist">
+                <h3>Assistance</h3>
                 <p>Help Desk</p>
                 <p>Contact Us</p>
             </section>
