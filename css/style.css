@@ -44,6 +44,7 @@ main {
     align-items: center;
     width: 75%;
     margin: 2em 0 2.5em 0;
+    color: #0065FC;
     
     
 }
@@ -216,6 +217,7 @@ main {
     margin-bottom: 1em;
     padding: 0;
     text-align: center;
+    outline: none;
 }
 
 .buttons .btn strong {
@@ -438,6 +440,17 @@ main {
 
 a {
     text-decoration: none;
+}
+
+.wrapper a {
+    color: black;
+}
+
+.wrapper2 a {
+    color: black;
+}
+
+.wrapper3 a {
     color: black;
 }
 
